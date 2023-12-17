@@ -103,7 +103,8 @@ function generateREADME(data) {
   const userContent = `
   # ${name} README
   
-  ${licenseBadgeUrl})](${getLicenseLink(data.license)}
+  [![License](${licenseBadgeUrl})](${getLicenseLink(data.license)})
+
   ${tableOfContents}
   
   ## Description
@@ -128,7 +129,7 @@ function generateREADME(data) {
   - GitHub: [${github}](https://github.com/${github})
   - Email: ${email}
   - Phone: ${phone} 
-  - Prefered Contact Method: ${contactPreference})
+  - Prefered Contact Method: ${contactPreference}
   `;
 
   return userContent;
